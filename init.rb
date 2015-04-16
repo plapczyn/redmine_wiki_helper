@@ -80,6 +80,8 @@ Redmine::Plugin.register :redmine_wiki_helper do
   author 'Philip Lapczynski'
   description 'This is a plugin for extending Redmine macro syntax'
   version '1.0.0'
+  url 'https://github.com/plapczyn/redmine_wiki_helper'
+  author_url 'https://github.com/plapczyn'
 
   Redmine::WikiFormatting::Macros.register do
     desc <<DESC
