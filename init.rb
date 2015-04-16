@@ -39,7 +39,7 @@ TEMPLATE
 end
 class AlmHelper
   def initialize
-    @head = /^alm:/
+    @head = /^alm:.*/
   end
 
   def is_alm?(str)
@@ -49,6 +49,7 @@ class AlmHelper
   def alm_to_proto(str)
     Rails.logger.info "str == #{str}, is_alm? == #{is_alm?(str)}, head=#{@head.to_s}"
     return "" if !is_alm?(str)
+    str
   end
 
   def trim(str)
